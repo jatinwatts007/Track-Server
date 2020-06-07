@@ -1,13 +1,16 @@
 require('./models/user');
+require('./models/track');
 const express = require('express');
 const mongoose = require('mongoose');
 const authRoutes = require('./routes/authRoutes');
+const trackRoutes = require('./routes/trackRoutes');
 const bodyParser = require('body-parser');
 const requireAuth = require('./middlewares/requireAuth');
 
 const app = express();
 app.use(bodyParser.json());
 app.use(authRoutes);
+app.use(trackRoutes);
 const mongoUri =
   'mongodb+srv://jatinwatts:jatin@007@cluster0-cgsyi.mongodb.net/React-Native?retryWrites=true&w=majority';
 
