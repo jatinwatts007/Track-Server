@@ -1,4 +1,4 @@
-import '../_mockLocation';
+ // import '../_mockLocation';
 import { Context as locationContext } from '../context/locationContext';
 import React, { useCallback, useContext } from 'react';
 import { StyleSheet, TabBarIOS } from 'react-native';
